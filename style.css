@@ -201,6 +201,7 @@ footer {
   grid-template-columns: 1fr 1fr 1fr;
   gap: 12px;
   place-items: stretch;
+  grid-template-rows: auto;
 }
 
 .grid-item {
