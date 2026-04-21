@@ -1,13 +1,30 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <title>CSE 110 Lab 2 Meeting Minutes</title>
+    <title>CSE 110 Lab 3 Meeting Minutes</title>
     <meta charset="UTF-8" />
     <meta
       name="description"
       content="Meeting minutes for a sample software engineering team"
     />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      body {
+        font-family: "Inter", Arial, sans-serif;
+      }
+
+      .internal-style-demo {
+        background-color: lavender;
+      }
+    </style>
   </head>
   <body>
     <header>
@@ -16,12 +33,12 @@
       <p><strong>Date:</strong> April 11, 2026</p>
 
       <nav>
-        <a href="#attendance">Attendance</a><br />
-        <a href="#agenda">Agenda</a><br />
-        <a href="#unfinished">Unfinished Business</a><br />
-        <a href="#new">New Business</a><br />
-        <a href="#comments">Comments</a><br />
-        <a href="#media">Media</a><br />
+        <a href="#attendance">Attendance</a>
+        <a href="#agenda">Agenda</a>
+        <a href="#unfinished">Unfinished Business</a>
+        <a href="#new">New Business</a>
+        <a href="#comments">Comments</a>
+        <a href="#media">Media</a>
         <a href="#form">Feedback Form</a>
       </nav>
 
@@ -29,7 +46,7 @@
     </header>
 
     <main>
-      <section id="attendance">
+      <section id="attendance" class="card">
         <h2>Attendance</h2>
         <ul>
           <li><strong>Hojoon</strong></li>
@@ -39,28 +56,37 @@
         </ul>
       </section>
 
-      <section id="agenda">
+      <section id="agenda" class="card">
         <h2>Agenda</h2>
         <ol>
           <li>Project idea discussion</li>
           <li>Feature brainstorming</li>
           <li>Assigning initial tasks</li>
         </ol>
+
+        <div class="flex-container">
+          <div class="flex-item">Review previous minutes</div>
+          <div class="flex-item">Discuss timer features</div>
+          <div class="flex-item">Assign initial tasks</div>
+        </div>
       </section>
 
-      <section id="unfinished">
+      <section id="unfinished" class="card">
         <h2>Unfinished Business</h2>
         <p>
           We still need to decide the final app name and confirm whether we want
           daily or weekly task tracking.
         </p>
+        <p id="important-note">
+          Final naming and tracking scope still need to be confirmed.
+        </p>
       </section>
 
-      <section id="new">
+      <section id="new" class="card">
         <h2>New Business</h2>
         <div>
           <h3>Feature Ideas</h3>
-          <p>
+          <p class="highlight">
             Possible features include a <b>timer</b>, task history, and a simple
             progress dashboard.
           </p>
@@ -68,11 +94,13 @@
             We also discussed <i>user motivation</i> and whether notifications
             are <em>necessary for the first version</em>.
           </p>
-          <span>Initial priority: MVP first.</span>
+          <span style="border: 2px dashed teal; padding: 0.25rem">
+            Initial priority: MVP first.
+          </span>
         </div>
       </section>
 
-      <section id="comments">
+      <section id="comments" class="card">
         <h2>Miscellaneous Comments / Questions / Concerns</h2>
         <p>
           Alice asked whether the app should work on mobile first.<br />
@@ -87,9 +115,15 @@
             important than adding too many advanced features at the start.
           </p>
         </details>
+
+        <div class="grid-container">
+          <div class="grid-item">UI concern</div>
+          <div class="grid-item">Deadline concern</div>
+          <div class="grid-item">Mobile-first idea</div>
+        </div>
       </section>
 
-      <section id="media">
+      <section id="media" class="card">
         <h2>Diagrams and Recordings</h2>
 
         <h3>Photo</h3>
@@ -112,7 +146,7 @@
         </video>
       </section>
 
-      <section id="form">
+      <section id="form" class="card internal-style-demo">
         <h2>Feedback Form</h2>
 
         <form>
@@ -179,11 +213,30 @@
           </fieldset>
         </form>
       </section>
+
+      <section class="card info-box">
+        <h3>Extra Information</h3>
+        <p class="color-wide">
+          This section demonstrates newer CSS features used in Lab 3.
+        </p>
+      </section>
+
+      <section class="card">
+        <h2 class="sticky-title">Layout Demonstration</h2>
+        <div class="relative-box units-demo">Relative units demo</div>
+        <div class="absolute-demo">Absolute units demo</div>
+        <div class="hidden-note">This note is hidden.</div>
+        <span class="inline-tag">inline text</span>
+        <span class="inline-block-box">inline-block</span>
+        <div class="block-box">block element</div>
+      </section>
     </main>
+
+    <div class="fixed-help">Help</div>
 
     <footer>
       <hr />
-      <p>Created for CSE 110 Lab 2</p>
+      <p>Created for CSE 110 Lab 3</p>
       <p><a href="https://github.com/">GitHub</a></p>
     </footer>
   </body>
